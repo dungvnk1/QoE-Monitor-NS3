@@ -19,23 +19,32 @@
     <p>3. My idea to improve this tool</p>
     
     <h2>What I have done:</h2>
-    <h3>First week:</h3>
-    <p> -Read and understood what to do following the above slide</p>
-    <p> -Installed Ubuntu</p>
-    <p> -Installed NS3</p> 
-    <p> -Installed QoE Monitor</p>    
+    <h3>First week: <a href="#" onclick="showMore()">See more</a></h3>
+    <div id="moreContent" style="display: none;">
+        <p> -Read and understood what to do following the above slide</p>
+        <p> -Installed Ubuntu</p>
+        <p> -Installed NS3</p>
+        <p> -Installed QoE Monitor</p>
     
-    <h5>Error I got:</h5>
-    <p>-Unable to run the examples following the images:</p>
-    <img src="pic1.png">
-    <img src="pic2.png">
-    <img src="pic3.png">
-    <br>
+        <h5>Error I got:</h5>
+        <p>-Unable to run the examples following the images:</p>
+        <img src="pic1.png">
+        <img src="pic2.png">
+        <img src="pic3.png">
+        <br>
+        <h2>What I will do in the future:</h2>
+        <p>-I will try to google search about my error to fix the above problem.</p>
+        <p>-I will try to study more about the PSNR and SSIM to understand more about it (I still didn't get it clearly)</p>
+        <a href="#" onclick="showLess()">See less</a>
+    </div>
     
-    <h2>What I will do in the future:</h2>
-    <p>-I will try to google search about my error to fix the above problem.</p>
-    <p>-I will try to study more about the PSNR and SSIM to understand more about it (I still didn't get it clearly)</p>
-
-    <p>Some test to check Github Desktop ...</p>
+    <script>
+        function showMore() {
+            document.getElementById("moreContent").style.display = "block";
+        }
+        function showLess() {
+            document.getElementById("moreContent").style.display = "none";
+        }
+    </script>
 </body>
 </html>
